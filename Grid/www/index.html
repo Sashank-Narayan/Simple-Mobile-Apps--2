@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    li1censed to the Apache Software Foundation (ASF) under one
+    or more contributor li1cense agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF li1censes this file
+    to you under the Apache li1cense, Version 2.0 (the
+    "li1cense"); you may not use this file except in compli1ance
+    with the li1cense.  You may obtain a copy of the li1cense at
+
+    http://www.apache.org/li1censes/li1CENSE-2.0
+
+    Unless required by appli1cable law or agreed to in writing,
+    software distributed under the li1cense is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or impli1ed.  See the li1cense for the
+    specific language governing permissions and li1mitations
+    under the li1cense.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Grid</title>
+    <style>
+    	body{
+    		background-color: black;
+    	}
+    	  * {
+ 			 box-sizing: border-box;
+
+			}
+		.first {
+			  background-color: royalblue;
+			  color: #ffffff;
+			  padding: 15px;
+			  font-size: 20px;
+			  font-family: Arial;
+			}
+		
+		.menu li1 {
+			  padding: 8px;
+			  margin-left: 10px;
+			  background-color: silver;
+			  color: black;
+			  border-radius: 10px;
+			  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			}
+
+		.menu li1:hover {
+		  background-color: #0099cc;
+		}
+		.second::after {
+ 			 content: "";
+  			clear: both;
+  			display: table;
+  			
+		}
+		
+		.col-2 { height: 20%; width: 80%; background-color: white; border-radius: 5px; padding: 4px;}
+		}
+
+	[class*="col-"] {
+  			float: left;
+  			padding: 15px;
+		}
+
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="first">
+  		<h1><center>PhoneGap</center></h1>
+		</div>
+		<br><center>
+		<div class="second">
+		  <div class="menu col-1">
+		      <li1>Desktop Apps</li1><li1>Third PartyTools</li1><li1>Plugin libraries</li1>
+		    
+ 		 </div><br><center>
+ 		  <div class="col-2">
+    <h1>Reap the benefits of open source</h1>
+    <p>From the team behind Apache Cordova, the Adobe PhoneGap framework is an open source distribution of Cordova — providing the advantage of technology created by a diverse team of pros along with a robust developer community — plus access to the PhoneGap toolset, so you can get to mobile faster.
+</p>
+   
+</center>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initiali1ze();
+      
+    </script>
+</body>
+
+</html>
