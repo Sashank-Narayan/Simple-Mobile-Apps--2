@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        background-color: black;
+        color:silver;
+    }
+</style>
+<body>
+<center>
+<p>Know your GeoLocation</p>
+
+<button onclick="getLocation()">Find</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Your Latitude: " + position.coords.latitude + 
+  "<br>Your Longitude: " + position.coords.longitude;
+}
+
+</script>
+</center>
+</body>
+</html>
